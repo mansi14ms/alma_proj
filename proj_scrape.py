@@ -60,5 +60,5 @@ for it in range(1, top_n+1):
 
     outer_box.find_element_by_xpath("//strong[contains(text(),'"+commit[1].split(" ")[0]+"')]").click()
     time.sleep(5)
-    for j in range(0,inside_m):
+    for j in range(0,inside_m+1):
         print(driver.find_elements_by_class_name("mb-1")[j].text)
